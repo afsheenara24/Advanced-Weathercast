@@ -1,17 +1,17 @@
 'use client';
 
 import { Suspense, lazy, useMemo, useState, useEffect } from 'react';
-import WeatherDashboardSkeleton from '@/components/views/dashboard-skeleton';
-import Footer from '@/components/views/footer';
+import WeatherDashboardSkeleton from '../components/views/dashboard-skeleton';
+import Footer from '../components/views/footer';
 import { ErrorBoundary } from 'react-error-boundary';
-import LocationPermissionDialog from '@/components/views/location-dialog';
-import { useOptimizedWeather } from '@/hooks/useOptimizedWeather';
-import { ErrorFallback } from '@/components/error-fallback';
+import LocationPermissionDialog from '../components/views/location-dialog';
+import { useOptimizedWeather } from '../hooks/useOptimizedWeather';
+import { ErrorFallback } from '../components/error-fallback';
 import { AnimatePresence, motion } from 'framer-motion';
-import { useWeatherStore } from '@/lib/store';
+import { useWeatherStore } from '../lib/store';
 
 // Lazy loaded component
-const WeatherDashboard = lazy(() => import('@/components/views/dashboard'));
+const WeatherDashboard = lazy(() => import('../components/views/dashboard'));
 
 // WeatherApp is the main page component for the weather application.
 // It manages state, handles loading and error boundaries, and renders the dashboard or skeleton as appropriate.
