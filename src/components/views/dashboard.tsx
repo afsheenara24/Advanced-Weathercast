@@ -1,12 +1,12 @@
 import React, { useMemo } from 'react';
 import { WeatherData } from '@/types/weather';
-import DayDuration from '@/components/views/day-duration';
-import AirPollutionChart from '@/components/views/air-pollution';
-import TemperatureHumidityChart from '@/components/views/temp-humidity';
-import ClientMap from '@/components/views/client-map';
-import CurrentWeatherCard from '@/components/views/current-weather';
-import WindPressureCard from '@/components/views/wind-pressure';
-import HourlyForecast from '@/components/views/hourly-forecast';
+import DayDuration from '../components/views/day-duration';
+import AirPollutionChart from '../components/views/air-pollution';
+import TemperatureHumidityChart from '../components/views/temp-humidity';
+import ClientMap from '../components/views/client-map';
+import CurrentWeatherCard from '../components/views/current-weather';
+import WindPressureCard from '../components/views/wind-pressure';
+import HourlyForecast from '../components/views/hourly-forecast';
 
 interface WeatherDashboardProps {
   weatherData: WeatherData;
